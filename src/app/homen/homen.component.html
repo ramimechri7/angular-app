@@ -1,0 +1,28 @@
+<br><br><br>
+<div class="row justify-content-md-center ">
+    <div class="col-md-auto">
+        <div class="card " style="width: 30rem;">
+            <div class="card-body">
+                <form #userForm="ngForm" (ngSubmit)="onFormSubmit(userForm)">
+                    <div class="mb-3">
+                        <label for="nom" class="form-label">Nom</label>
+                        <input class="form-control" name="nom" id="nom" type="text" ngModel>
+                    </div>
+                    <div class="mb-3">
+
+                        <label for="prenom" class="form-label">Prenom</label>
+                        <input class="form-control" name="prenom" id="prenom" type="text" ngModel>
+                    </div>
+                    <div class="mb-3">
+
+                        <label for="age" class="form-label">Age</label>
+                        <input class="form-control" name="age" id="age" type="number" ngModel>
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-outline-success" type="submit">Ajouter</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
